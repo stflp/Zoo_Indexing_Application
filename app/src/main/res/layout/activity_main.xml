@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:color="@color/black"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="842dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/nameOfAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name of animal here..." />
+
+        <EditText
+            android:id="@+id/nameOfContinent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter continent here..." />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="421dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@drawable/button_selector"
+            android:text="ADD" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/animalRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="595dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/animal_items" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
